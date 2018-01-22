@@ -1,0 +1,3 @@
+# Permitiendo solo las extenciones .tex y .pdf
+!.pdf
+!.tex
