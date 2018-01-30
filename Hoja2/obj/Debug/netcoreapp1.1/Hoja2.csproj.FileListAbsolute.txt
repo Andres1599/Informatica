@@ -1,0 +1,8 @@
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/bin/Debug/netcoreapp1.1/Hoja2.deps.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/bin/Debug/netcoreapp1.1/Hoja2.runtimeconfig.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/bin/Debug/netcoreapp1.1/Hoja2.runtimeconfig.dev.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/bin/Debug/netcoreapp1.1/Hoja2.dll
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/bin/Debug/netcoreapp1.1/Hoja2.pdb
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/obj/Debug/netcoreapp1.1/Hoja2.AssemblyInfo.cs
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/obj/Debug/netcoreapp1.1/Hoja2.dll
+/home/andres1599/Documentos/INFORMATICA 2/Hoja2/obj/Debug/netcoreapp1.1/Hoja2.pdb
