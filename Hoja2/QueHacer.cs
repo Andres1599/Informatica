@@ -11,8 +11,9 @@ namespace Hoja2
         //propiedades
         private int CodigoQueHacer;
         private string Descripcion;
-        private int Estado;
+        private Estados Estado;
         private bool Utiles;
+        private string ListadoUtiles;
 
         //metodos getter y setters
         public int CodigoQueHacer_
@@ -27,44 +28,54 @@ namespace Hoja2
             set { this.Descripcion = value; }
         }
 
-        public int Estado_
-        {
-            get
-            {
-                if (this.Estado > 0 || this.Estado < 1)
-                    throw new System.Exception("El estado que esta ingresado no es valido");
-                else
-                    return this.Estado;
-            }
-            set { this.Estado = value; }
-        }
         public bool Utiles_
         {
             get { return this.Utiles; }
             set { this.Utiles = value; }
         }
 
-        //cosntructor padre
-        public QueHacer() { }
+        public string ListadoUtiles_
+        {
+            get { return this.ListadoUtiles; }
+        }
+        //cosntructor por defecto
+        public QueHacer()
+        {
+            this.CodigoQueHacer = 0;
+            this.Descripcion = "";
+            this.Estado = Estados.enProgreso;
+            this.Utiles = false;
+            this.ListadoUtiles = "";
+        }
+
+        //constructor personalizado
+        public QueHacer(int cod,string descrip,Estados estados,bool utiles,string lista){
+            this.CodigoQueHacer = cod;
+            this.Descripcion = descrip;
+            this.Estado = estados;
+            this.Utiles = utiles;
+            this.ListadoUtiles = lista;
+        }
 
         //metodos 
 
-        public void setEstado(Estados estados,int estado)
+        public void Completar()
         {
-            switch (estados)
-            {
-                case Estados.Terminda:
-                    this.Estado = estado;
-                    System.Console.WriteLine("La tarea esta terminada");
-                    break;
-                case Estados.enProgreso:
-                    this.Estado = estado;
-                    System.Console.WriteLine("La tarea esta en progreso");
-                    break;
-                default:
-                    break;
-            }
+            this.Estado = Estados.Terminda;
         }
 
+        public string checkUtiles(bool util, string ListadoUtiles_)
+        {
+            if (util)
+            {
+                this.ListadoUtiles = ListadoUtiles_;
+                return this.ListadoUtiles;
+            }
+            else
+            {
+                this.ListadoUtiles = "No hay utencilios disponibles en la tarea";
+            }
+            return "No hay utencilios disponibles en la tarea";
+        }
     }
 }
