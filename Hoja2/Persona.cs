@@ -4,37 +4,35 @@ namespace Hoja2
 {
     public class Persona
     {
-        private string nombre;
-        private string apellido;
-        private List<QueHacer> Tareas;
+        public string nombre;
+        public string apellido;
+        public QueHaceres Tareas;
 
-        public string nombre_
-        {
-            get { return this.nombre; }
-            set { this.nombre = value; }
-        }
-
-        public string apellido_
-        {
-            get { return this.apellido; }
-            set { this.apellido = value; }
-        }
-
+        public string nombre_ { get; set; }
+        public string apellido_ { get; set; }
+        public QueHaceres tareas_ { get; set; }
         //operaciones
+        public Persona() {
+        }
 
         public bool EstaDisponible()
         {
-            int cont = 0;
-
-            //busco las tareas que esten en progreso
-            foreach (var item in Tareas)
+            if (Tareas.EstaDisponible())
             {
-                //buscar las tareas en la lista que se encuentren en progreso
+                return true;
             }
-
-            if (cont < 1) return true; else return false;
+            return false;
         }
 
+        public void AgregarTarea(QueHacer QueHacer)
+        {
+            Tareas.AgregarTarea(QueHacer);
+        }
+
+        public void CompletarQueHacer()
+        {
+            Tareas.CompletarTarea();
+        }
 
     }
 }

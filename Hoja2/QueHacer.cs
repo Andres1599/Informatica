@@ -9,11 +9,11 @@ namespace Hoja2
     public class QueHacer
     {
         //propiedades
-        private int CodigoQueHacer;
-        private string Descripcion;
-        private Estados Estado;
-        private bool Utiles;
-        private string ListadoUtiles;
+        public int CodigoQueHacer;
+        public string Descripcion;
+        public Estados Estado {get; private set;}
+        public bool Utiles;
+        public string ListadoUtiles;
 
         //metodos getter y setters
         public int CodigoQueHacer_
@@ -39,24 +39,7 @@ namespace Hoja2
             get { return this.ListadoUtiles; }
         }
         //cosntructor por defecto
-        public QueHacer()
-        {
-            this.CodigoQueHacer = 0;
-            this.Descripcion = "";
-            this.Estado = Estados.enProgreso;
-            this.Utiles = false;
-            this.ListadoUtiles = "";
-        }
-
-        //constructor personalizado
-        public QueHacer(int cod,string descrip,Estados estados,bool utiles,string lista){
-            this.CodigoQueHacer = cod;
-            this.Descripcion = descrip;
-            this.Estado = estados;
-            this.Utiles = utiles;
-            this.ListadoUtiles = lista;
-        }
-
+        public QueHacer() { this.Estado = Estados.enProgreso; }
         //metodos 
 
         public void Completar()
