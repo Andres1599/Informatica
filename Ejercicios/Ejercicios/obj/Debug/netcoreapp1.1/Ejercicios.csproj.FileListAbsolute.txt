@@ -1,0 +1,8 @@
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/bin/Debug/netcoreapp1.1/Ejercicios.deps.json
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/bin/Debug/netcoreapp1.1/Ejercicios.runtimeconfig.json
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/bin/Debug/netcoreapp1.1/Ejercicios.runtimeconfig.dev.json
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/bin/Debug/netcoreapp1.1/Ejercicios.dll
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/bin/Debug/netcoreapp1.1/Ejercicios.pdb
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/obj/Debug/netcoreapp1.1/Ejercicios.AssemblyInfo.cs
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/obj/Debug/netcoreapp1.1/Ejercicios.dll
+/home/andres1599/Documentos/INFORMATICA 2/Ejercicios/Ejercicios/obj/Debug/netcoreapp1.1/Ejercicios.pdb

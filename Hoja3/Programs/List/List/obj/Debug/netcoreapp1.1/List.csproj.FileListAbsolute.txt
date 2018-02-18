@@ -1,0 +1,8 @@
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/bin/Debug/netcoreapp1.1/List.deps.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/bin/Debug/netcoreapp1.1/List.runtimeconfig.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/bin/Debug/netcoreapp1.1/List.runtimeconfig.dev.json
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/bin/Debug/netcoreapp1.1/List.dll
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/bin/Debug/netcoreapp1.1/List.pdb
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/obj/Debug/netcoreapp1.1/List.AssemblyInfo.cs
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/obj/Debug/netcoreapp1.1/List.dll
+/home/andres1599/Documentos/INFORMATICA 2/Hoja3/Programs/List/List/obj/Debug/netcoreapp1.1/List.pdb
