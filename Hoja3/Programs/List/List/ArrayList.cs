@@ -2,14 +2,18 @@ public class ArrayList<T> : Lista<T>
 {
     //Propiedades
     private T[] almacenamiento { get; set; }
-    public ArrayList<T> Resto{ get; private set;}
-    public ArrayList(T elemento)
+    public ArrayList<T> Resto { get; private set; }
+    public ArrayList(T[] elemento)
     {
-
+        this.almacenamiento = elemento;
     }
 
-    public override bool Get(int x, out int y)
+    public override bool Get(int indice, out int y)
     {
+        if(indice <= 0) {
+            y = 0;
+            return false;
+        }
         throw new System.NotImplementedException();
     }
 
@@ -35,16 +39,26 @@ public class ArrayList<T> : Lista<T>
 
     public override void Push(T elemento)
     {
+        ArrayList<T> lista = this;
+
+        while (lista.Resto != null)
+        {
+            lista = lista.Resto;
+        }
+
+        // lista.Resto = new ArrayList<T>();
         throw new System.NotImplementedException();
     }
 
     public override bool Set(int x, T elemento)
     {
+        return false;
         throw new System.NotImplementedException();
     }
 
     public override void Push(IList<T> elemento)
     {
+
         throw new System.NotImplementedException();
     }
 }
