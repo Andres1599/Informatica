@@ -1,64 +1,62 @@
-public class ArrayList<T> : Lista<T>
+public class ArrayList<T> : Lista<T> where T : new()
 {
     //Propiedades
     private T[] almacenamiento { get; set; }
-    public ArrayList<T> Resto { get; private set; }
     public ArrayList(T[] elemento)
     {
         this.almacenamiento = elemento;
     }
 
-    public override bool Get(int indice, out int y)
+    public override bool Get(int indice, out T y)
     {
-        if(indice <= 0) {
-            y = 0;
+        y = new T();
+        if (indice >= almacenamiento.Length)
+        {
             return false;
+        }
+        else
+        {
+            y = almacenamiento[indice];
+            return true;
         }
         throw new System.NotImplementedException();
     }
 
     public override int Length()
     {
-        return NewMethod();
+        return this.almacenamiento.Length;
         throw new System.NotImplementedException();
-    }
-
-    private int NewMethod()
-    {
-        ArrayList<T> lista = this;
-        int len = 0;
-
-        while (lista.Resto != null)
-        {
-            lista = lista.Resto;
-            len++;
-        }
-
-        return len;
     }
 
     public override void Push(T elemento)
     {
-        ArrayList<T> lista = this;
-
-        while (lista.Resto != null)
+        T[] comodin = new T[almacenamiento.Length + 1];
+        for (int i = 0; i < almacenamiento.Length; i++)
         {
-            lista = lista.Resto;
+            comodin[i] = almacenamiento[i];
         }
-
-        // lista.Resto = new ArrayList<T>();
+        comodin[comodin.Length - 1] = elemento;
+        almacenamiento = comodin;
         throw new System.NotImplementedException();
     }
 
     public override bool Set(int x, T elemento)
     {
-        return false;
+
+        if (x >= Length())
+        {
+            return false;
+        }
+        else
+        {
+            almacenamiento[x] = elemento;
+            return true;
+        }
         throw new System.NotImplementedException();
     }
 
     public override void Push(IList<T> elemento)
     {
-
         throw new System.NotImplementedException();
     }
 }
