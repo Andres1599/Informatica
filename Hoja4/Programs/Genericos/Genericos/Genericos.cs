@@ -6,13 +6,13 @@ namespace Genericos
 
 
         //retorno del primer elemento de la lista
-        public static T Head<T>(T[] lista)
+        public T Head<T>(T[] lista)
         {
             return lista[0];
         }
 
         //retorno del mismo arreglo a excepcion del primer elemto
-        public static T[] Tail<T>(T[] lista)
+        public T[] Tail<T>(T[] lista)
         {
             T[] nuevaLista = new T[lista.Length - 1];
             int comodin = 0;
@@ -24,29 +24,38 @@ namespace Genericos
             return nuevaLista;
         }
 
-        //retorno de una nueva tupla
-        public static T[] Zip<T1, T2, T>(T1[] listaA, T2[] listaB)
+        //retorno de un arreglo de tuplas
+        public Tupla<T1, T2>[] Zip<T1, T2>(T1[] listaA, T2[] listaB)
         {
-            T[] arreglo;
-            if (listaA.Length < listaB.Length)
-            {
-                arreglo = new T[listaA.Length];
-            }
-            else if (listaA.Length > listaB.Length)
-            {
-                arreglo = new T[listaB.Length];
-            }
-            else
-            {
-                arreglo = new T[listaA.Length];
-            }
+            Tupla<T1, T2>[] arreglo = new Tupla<T1, T2>[Longitud<T1, T2>(listaA, listaB)];
 
             //agregando valores al arreglo
             for (int i = 0; i < arreglo.Length; i++)
             {
-                
+                arreglo[i] = new Tupla<T1, T2>(listaA[i], listaB[i]);
             }
             return arreglo;
         }
+
+        //calculo de la longitud del arreglo de las tuplas
+        private int Longitud<T1, T2>(T1[] valorA, T2[] valorB)
+        {
+            int longitud = 0;
+            if (valorA.Length == valorB.Length)
+            {
+                longitud = valorA.Length;
+            }
+            else if (valorA.Length > valorB.Length)
+            {
+                longitud = valorB.Length;
+            }
+            else if (valorA.Length < valorB.Length)
+            {
+                longitud = valorA.Length;
+            }
+            return longitud;
+        }
+
+        //metodo con objetos
     }
 }
