@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathrsfs}
+\usepackage[spanish]{babel}
+\usepackage{mathdots} 
+\usepackage{mathdots}
+
+\title{Hoja6}
+\author{Andrés Higueros Hernández}
+\date{25 Marzo 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Primera Parte}
+    Para poder hacerlo necesito verificar que alguno de los numeros no sea cero por lo tanto utilizare una funcion llamada esCero(Numero $a$)
+    \begin{enumerate}
+        \item  funcion Suma(Numero $a$,Numero $b$){ $:=$\hfill \break
+            si esCero($a$) retorno $b$,\hfill \break
+            si esCero($b$) retorno $a$,\hfill \break
+            Numero $c$ es el predeccesor del numero $a$
+            de lo contrario retorno un nuevo numero que es igual  a Suma($c$,$b$)\hfill \break
+        }
+        \hfill \break
+        - en terminos de la funcion MayorQue() se declara la funcion Multiplicar
+        \item funcion Multiplica(Numero $a$, Numero $b$) $:=$\hfill \break
+        Numero nAcumulado $:=$ nuevo numero,\hfill \break
+        si esCero($a$) o esCero($b$) retornar cero,\hfill \break
+        de lo contrario retornar\hfill \break
+        si MayorQue($b > 1$) $:=$ Suma($-a$,Multiplica($a$,$b.Predecesor$))\hfill \break
+        - se necesita de una funcion de saver si los numeros son iguales SonIguales(Numero $a$,Numero $b$)\hfill \break
+        //una funcion que retorna un valor booleano
+        \item funcion MayorQue(Numero $a$,Numero $b$)$:=$ \hfill \break
+        si SonIguales($a$,$b$) retornar falso, \hfill \break
+        de lo contrario: \hfill \break
+        si SonIguales($a$,SonIguales($a$,$b +1 $) retorno falso \hfill \break
+        de lo contrario retorno verdadero
+    \end{enumerate}
+\section{Segunda Parte}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{document}
