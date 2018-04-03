@@ -1,0 +1,4 @@
+C:\Users\Andres\Documents\UNIS\INF. GIT\RecuperacionParcial\RecuperacionParcial\RecuperacionParcial\obj\Debug\netcoreapp2.0\RecuperacionParcial.csprojResolveAssemblyReference.cache
+C:\Users\Andres\Documents\UNIS\INF. GIT\RecuperacionParcial\RecuperacionParcial\RecuperacionParcial\obj\Debug\netcoreapp2.0\RecuperacionParcial.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Documents\UNIS\INF. GIT\RecuperacionParcial\RecuperacionParcial\RecuperacionParcial\obj\Debug\netcoreapp2.0\RecuperacionParcial.AssemblyInfoInputs.cache
+C:\Users\Andres\Documents\UNIS\INF. GIT\RecuperacionParcial\RecuperacionParcial\RecuperacionParcial\obj\Debug\netcoreapp2.0\RecuperacionParcial.AssemblyInfo.cs
