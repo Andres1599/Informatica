@@ -11,7 +11,7 @@ namespace HeapTest
 		{
 			int[] arreglo = { 2, 5, 6, 4, 20, 12 };
 			Program.Heapify(arreglo);
-			Assert.Equal(new int[] { 20, 12, 6, 5, 4, 2 }, arreglo);			
+			Assert.Equal(20, arreglo[0]);			
 		}
 	}
 }

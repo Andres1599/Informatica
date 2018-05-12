@@ -14,7 +14,6 @@ namespace Heap
 		{
 		}
 
-		// i se refiere al indice actual
 		public static void Heapify(int[] A)
 		{
 			Heap = A.Length - 1;
@@ -34,7 +33,6 @@ namespace Heap
 
 			int index = 0;
 
-			// Check to see which node in the tree subset has the largest value
 			if (izq <= Heap && A[izq] > A[i])
 			{
 				index = izq;
@@ -48,7 +46,6 @@ namespace Heap
 				index = der;
 			}
 
-			// Do not make any switches if the largest node is the parent
 			if (index != i)
 			{
 				int temp = A[index];
